@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         randomImage()
     }
+    
     func randomImage () {
         randomIndex = Int(arc4random_uniform(6))
         imageView.image = UIImage(named: imageList[randomIndex])
