@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
     
     func randomImage () {
-        randomIndex = Int(arc4random_uniform(6))
+        randomIndex = Int(arc4random_uniform(5))
         imageView.image = UIImage(named: imageList[randomIndex])
     }
 }
